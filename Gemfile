@@ -3,3 +3,4 @@
 source "https://rubygems.org"
 
 gem 'temporal-ruby', github: 'coinbase/temporal-ruby'
+gem 'pry'
