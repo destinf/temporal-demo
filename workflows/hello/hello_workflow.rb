@@ -1,4 +1,4 @@
-require './hello_activity'
+require './workflows/hello/hello_activity'
 
 class HelloWorldWorkflow < Temporal::Workflow
   def execute

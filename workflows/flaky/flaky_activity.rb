@@ -5,9 +5,7 @@ FLAKY_URI = 'http://localhost:4567/flaky'
 
 class FlakyActivity < Temporal::Activity
   def execute
-    uri = URI(::FLAKY_URI)
-    res = Net::HTTP.get_response(uri)
-    if res.code_type == Net::HTTPOK
+    if Random.rand(2) == 0
       return "Success"
     else
       raise "Error fetching service"

@@ -1,4 +1,4 @@
 require './configuration'
-require './flaky_workflow/flaky_workflow'
+require './workflows/flaky/flaky_workflow'
 
 Temporal.start_workflow(FlakyWorkflow)

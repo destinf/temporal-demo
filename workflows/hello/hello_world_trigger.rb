@@ -1,4 +1,4 @@
 require './configuration'
-require './hello_workflow'
+require './workflows/hello/hello_workflow'
 
 Temporal.start_workflow(HelloWorldWorkflow)

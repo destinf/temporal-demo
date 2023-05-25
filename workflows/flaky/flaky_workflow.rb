@@ -1,4 +1,4 @@
-require './flaky_workflow/flaky_activity.rb'
+require './workflows/flaky/flaky_activity'
 
 class FlakyWorkflow < Temporal::Workflow
   def execute
