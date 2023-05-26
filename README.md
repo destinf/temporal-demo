@@ -13,6 +13,12 @@ brew install temporal
 https://learn.temporal.io/getting_started/typescript/dev_environment/
 
 ## Usage
+
+### Start the Temporal server
+```bash
+temporal server start-dev
+```
+
 ### Start the worker
 ```bash
 bundle exec ruby worker.rb
