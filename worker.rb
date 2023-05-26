@@ -18,4 +18,9 @@ require './workflows/failing/failing_workflow'
 worker.register_workflow(FailingWorkflow)
 worker.register_activity(FailingActivity)
 
+require './workflows/async/async_activity_1'
+require './workflows/async/async_workflow'
+worker.register_workflow(AsyncWorkflow)
+worker.register_activity(AsyncActivity1)
+
 worker.start # runs forever
